@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/ajaxCall', array('as' => 'ajaxCall', 'uses' => 'AppController@ajaxCall'));
 
 Route::get('/', function () {
     return view('welcome');
